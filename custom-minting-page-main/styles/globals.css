@@ -37,6 +37,11 @@ body {
   text-align: center;
 }
 
+.mini {
+  font-family: 'Revalia', cursive;
+  /*font-size: 2rem;*/
+}
+
 
 /* Box sizing rules */
 *,
