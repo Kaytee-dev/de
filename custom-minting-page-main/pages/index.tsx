@@ -159,7 +159,7 @@ const Home: NextPage = () => {
       {/* Powered by thirdweb */}{" "}
       <img
         src={`/logo.png`}
-        alt="Thirdweb Logo"
+        alt="Stupid Nft Logo"
         width={135}
         className={styles.buttonGapTop}
       />
