@@ -37,6 +37,11 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-family: 'Revalia', cursive;
+  font-size: 2rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
