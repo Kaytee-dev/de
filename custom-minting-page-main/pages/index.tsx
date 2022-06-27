@@ -77,7 +77,7 @@ const Home: NextPage = () => {
       <div className={styles.mintInfoContainer}>
         <div className={styles.infoSide}>
           {/* Title of your NFT Collection */}
-          <h1>{contractMetadata?.name}</h1>
+          <h1 className={styles.mini}>{contractMetadata?.name}</h1>
           {/* Description of your NFT Collection */}
           <p className={styles.description}>{contractMetadata?.description}</p>
         </div>
