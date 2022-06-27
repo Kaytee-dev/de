@@ -6,6 +6,10 @@
   justify-content: center;
   width: 100vw;
 }
+h1 {
+  font-family: 'Revalia', cursive;
+  font-size: 2rem;
+}
 
 .previewImage {
   height: 400px;
