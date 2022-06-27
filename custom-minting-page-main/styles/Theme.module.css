@@ -42,7 +42,9 @@
 }
 
 .description {
-  opacity: 0.7;
+  opacity: 0.9;
+  color: #f7f7f7;
+  text-alignment: justify;
   font-size: 1rem;
 }
 
