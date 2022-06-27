@@ -133,7 +133,7 @@ const Home: NextPage = () => {
                   disabled={
                     quantity >=
                     parseInt(
-                      activeClaimCondition?.quantityLimitPerTransaction || "0"
+                      activeClaimCondition?.quantityLimitPerTransaction || "3"
                     )
                   }
                 >
