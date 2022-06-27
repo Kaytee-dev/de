@@ -44,8 +44,11 @@
 .description {
   opacity: 0.9;
   color: #f7f7f7;
-  text-alignment: left;
   font-size: 1rem;
+}
+
+p.description {
+text-alignment: left;
 }
 
 .imageSide {
