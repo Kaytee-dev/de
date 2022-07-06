@@ -157,3 +157,56 @@ const Home: NextPage = () => {
                   onClick={mint}
                   disabled={claimNFT.isLoading}
                 >
+                 
+                  {claimNFT.isLoading
+                    ? 'Minting...'
+                    : `Mint${quantity > 1 ? ` ${quantity}` : ''}${
+                        activeClaimCondition?.price.eq(0)
+                          ? ' (Free)'
+                          : activeClaimCondition?.currencyMetadata.displayValue
+                          ? ` (${formatUnits(
+                              priceToMint,
+                              activeClaimCondition.currencyMetadata.decimals,
+                            )} ${
+                              activeClaimCondition?.currencyMetadata.symbol
+                            })`
+                          : ''
+                      }`}
+                </button>
+              </>
+            )
+          ) : (
+            <div className={styles.buttons}>
+              <button
+                className={styles.mainButton}
+                onClick={connectWithMetamask}
+              >
+                Connect MetaMask
+              </button>
+              <button
+                className={styles.mainButton}
+                onClick={connectWithWalletConnect}
+              >
+                Connect with Wallet Connect
+              </button>
+              <button
+                className={styles.mainButton}
+                onClick={connectWithCoinbaseWallet}
+              >
+                Connect with Coinbase Wallet
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      {/* Powered by thirdweb */}{' '}
+      <img
+        src="/logo.png"
+        alt="thirdweb Logo"
+        width={135}
+        className={styles.buttonGapTop}
+      />
+    </div>
+  );
+};
+export default Home;
