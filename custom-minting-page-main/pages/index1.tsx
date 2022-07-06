@@ -17,7 +17,7 @@ import type { NextPage } from 'next';
 import { useState } from 'react';
 import styles from '../styles/Theme.module.css';
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = '0x322067594DBCE69A9a9711BC393440aA5e3Aaca1';
+const myNftDropContractAddress = '0x8dbD4e733885816d98ff8760744B09eDF39c3908';
 const Home: NextPage = () => {
   const nftDrop = useNFTDrop(myNftDropContractAddress);
   const address = useAddress();
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
   // Function to mint/claim an NFT
   const mint = async () => {
     if (isOnWrongNetwork) {
-      switchNetwork && switchNetwork(ChainId.Mumbai);
+      switchNetwork && switchNetwork(ChainId.Rinkeby);
       return;
     }
     claimNFT.mutate(
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
       {/* Powered by thirdweb */}{' '}
       <img
         src="/logo.png"
-        alt="thirdweb Logo"
+        alt="Stupid Nft Logo"
         width={135}
         className={styles.buttonGapTop}
       />
